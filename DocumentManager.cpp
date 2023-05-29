@@ -1,5 +1,12 @@
 #include "DocumentManager.h"
 
+
+DocumentManager::Document::Document(std::string name, int id, int license_limit){
+    this->name = name;
+    this->id = id;
+    this->license_limit = license_limit;
+}
+
 void DocumentManager::addPatron(int patronID){
     patrons.insert(patronID);
 }
