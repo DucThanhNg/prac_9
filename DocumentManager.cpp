@@ -8,7 +8,9 @@ int DocumentManager::search(std::string name){
     if (name_to_docid.count(name) > 0){
         return name_to_docid[name];
     }
-    return 0;
+    else{
+        return 0;
+    }
 }
 
 void DocumentManager::addDocument(std::string name, int id, int license_limit){
