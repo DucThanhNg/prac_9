@@ -11,3 +11,14 @@ int DocumentManager::search(std::string name){
     return 0;
 }
 
+void DocumentManager::addDocument(string name, int id, int license_limit){
+    return;
+}
+
+bool DocumentManager::borrowDocument(int docid, int patronID){
+    return true;
+}
+
+void DocumentManager:: returnDocument(int docid, int patronID){
+    return;
+}
