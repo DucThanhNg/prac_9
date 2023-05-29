@@ -11,7 +11,7 @@ int DocumentManager::search(std::string name){
     return 0;
 }
 
-void DocumentManager::addDocument(string name, int id, int license_limit){
+void DocumentManager::addDocument(std::string name, int id, int license_limit){
     return;
 }
 

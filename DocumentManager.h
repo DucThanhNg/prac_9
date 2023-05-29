@@ -18,7 +18,7 @@ class DocumentManager{
         std::unordered_map<std::string, int> name_to_docid;
 
     public:
-        void addDocument(string name, int id, int license_limit);
+        void addDocument(std::string name, int id, int license_limit);
         void addPatron(int patronID);
         int search(std::string name);
         bool borrowDocument(int docid, int patronID);
