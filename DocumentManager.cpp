@@ -10,3 +10,7 @@ int DocumentManager::search(std::string name){
     }
     return 0;
 }
+
+bool DocumentManager::borrowDocument(int docid, int patronID){
+    return false;
+}
