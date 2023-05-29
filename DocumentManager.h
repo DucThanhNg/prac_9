@@ -11,7 +11,7 @@ class DocumentManager{
             int id;
             int license_limit;
             int current_copies_borrowed;
-        }
+        };
 
         std::unordered_map<int, Document> documents;
         std::unordered_set<int> patrons;
