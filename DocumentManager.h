@@ -15,7 +15,7 @@ class DocumentManager{
 
         std::unordered_map<int, Document> documents;
         std::unordered_set<int> patrons;
-        std::unordered_map<int> name_to_docid;
+        std::unordered_map<std::string, int> name_to_docid;
 
     public:
         void addDocument(std::string name, int id, int license_limit);
