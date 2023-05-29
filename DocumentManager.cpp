@@ -18,6 +18,7 @@ void DocumentManager::addDocument(std::string name, int id, int license_limit){
             documents.emplace(id, Document(name, id, license_limit));
             name_to_docid[name] = id;
         }
+}
 
 bool DocumentManager::borrowDocument(int docid, int patronID){
     return true;
