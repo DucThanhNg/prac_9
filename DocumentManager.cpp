@@ -22,7 +22,7 @@ int DocumentManager::search(std::string name){
 
 void DocumentManager::addDocument(std::string name, int id, int license_limit){
     if (name_to_docid.count(name) == 0 && documents.count(id) == 0) {
-            documents[id] = Document(name, id, license_limit);
+            documents.emplace(id, Document(name, id, license_limit));;
             name_to_docid[name] = id;
         }
 }
